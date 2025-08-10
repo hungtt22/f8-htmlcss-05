@@ -75,6 +75,7 @@ a {
     font-size: 1.8rem;
     line-height: 1.67;
 }
+
 /* ============ Header =============== */
 .header {
     padding: 42px 0;
@@ -401,4 +402,119 @@ a {
     color: #fff;
     font-size: 0.8rem;
     line-height: 1;
+}
+
+/* ============== Works =================== */
+.works {
+    margin-top: 100px;
+    padding-top: 60px;
+}
+.works__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 130px;
+}
+/* Works-media */
+.works__media {
+    width: 49%;
+}
+.works__img-wrap {
+    position: relative;
+    width: 470px;
+    height: 619px;
+}
+
+.works__img-wrap::before {
+    content: url(../icon/hero__bg.svg);
+    position: absolute;
+    bottom: -2.5px;
+    left: 0;
+}
+.works__img-wrap::after {
+    content: url(../icon/card-logo.svg);
+    position: absolute;
+    top: 76px;
+    right: 62px;
+}
+.works__img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.card__status {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 96px;
+    right: -100px;
+    width: 226px;
+    height: 70px;
+    border-radius: 8px;
+    background: #fffdfa;
+    box-shadow: 0 14px 34px 0 rgba(0, 0, 0, 0.07);
+}
+.card__status-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background: #4ab5e3;
+}
+.card__status-icon {
+    position: relative;
+    z-index: 1;
+}
+.card__status-wrap::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: #fff;
+}
+.card__status-info__heading {
+    color: #212832;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.card__status-info__desc {
+    margin-top: 5px;
+    color: #696d76;
+    font-size: 1.2rem;
+}
+/* Works-content */
+.works__list {
+    margin-top: 70px;
+    width: 470px;
+    counter-reset: heading;
+}
+.works-item + .works-item {
+    margin-top: 30px;
+}
+.works-item__heading {
+    color: #212832;
+    font-family: "Open Sans";
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45;
+    counter-increment: heading;
+}
+.works-item__heading::before {
+    content: counter(heading) ". ";
+}
+.works-item__desc {
+    margin-top: 16px;
+    color: #696d76;
+    font-size: 1.6rem;
+    line-height: 1.75;
 }
