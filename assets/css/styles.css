@@ -945,6 +945,9 @@ a {
     transition: 0.2s;
 }
 .blog-item:hover {
+    transform: translateY(-16px);
+}
+.blog-item:hover {
     box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.07);
 }
 .blog-item__img {
