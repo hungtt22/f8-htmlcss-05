@@ -974,3 +974,62 @@ a {
 .blog-item__more:hover {
     color: #7264d6;
 }
+
+/* ============= Download ============= */
+.download {
+    margin-top: 100px;
+    padding-top: 60px;
+}
+.download__inner {
+    position: relative;
+    padding: 100px 0;
+    border-radius: 24px;
+    background: #7264d6;
+}
+.download__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.download__header * {
+    color: #fff !important;
+}
+.section-subtitle::before {
+    background: #fff;
+}
+.download__cta-group {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 18px;
+}
+.download__cta-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 182px;
+    height: 64px;
+    border-radius: 6px;
+}
+.star {
+    position: absolute;
+}
+.star__left-top {
+    left: 112px;
+    top: 49px;
+}
+.star__left-bottom {
+    left: 166px;
+    bottom: 49px;
+}
+.star__right-top {
+    right: 112px;
+    top: 49px;
+}
+.star__right-bottom {
+    right: 166px;
+    bottom: 49px;
+}
